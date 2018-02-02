@@ -1,0 +1,26 @@
+<div class="foot">
+  <div class="foot_list active" (click)="changeacIndex($event)">
+    <a [routerLink]="['/layout/recommend']">
+      <i class="iconfont icon-fangdajing"></i>
+      <p>推荐</p>
+    </a>
+  </div>
+  <div class="foot_list" (click)="changeacIndex($event)">
+      <a [routerLink]="['/layout/local']" >
+    <i class="iconfont icon-fangdajing"></i>
+    <p>当地</p>
+      </a>
+  </div>
+  <div class="foot_list" (click)="changeacIndex($event)">
+      <a [routerLink]="['/layout/gourmet']" >
+    <i class="iconfont icon-fangdajing"></i>
+    <p>美食家</p>
+      </a>
+  </div>
+  <div class="foot_list" (click)="changeacIndex($event)">
+      <a [routerLink]="['/layout/my']">
+    <i class="iconfont icon-fangdajing"></i>
+    <p>我的</p>
+      </a>
+  </div>
+</div>
