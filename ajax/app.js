@@ -30,7 +30,13 @@ app.all('*', function (req, res, next) {
 
 
 app.get("/local",(req,res)=>{
-    res.send("wefjkoasdb")
+    db.conn((err,dbs)=>{
+      var local=dbs.connect("local");
+      local.find({}).toArray((err,list=>{
+          res.send(list)
+      }) 
+
+    })
 })
 
 
