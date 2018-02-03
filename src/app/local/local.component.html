@@ -1,3 +1,84 @@
-<p>
-  local works!
-</p>
+<div id="localbox">
+
+  <div class="navbar navbar-default navbar-fixed-top" id="header">
+    <!-- <h1></h1> -->
+    <div class="head-content">
+      <span class="headcity">武汉
+        <i class="iconfont icon-fangdajing donwicon"></i>
+      </span>
+
+      <div class="input-group seachbox">
+        <i class="iconfont icon-fangdajing" id="searchicon"></i>
+        <input type="text" class="headsearch" placeholder="搜索的目的地/餐厅/菜品/用品">
+
+      </div>
+    </div>
+  </div>
+  <div class="lcoalbanner">
+
+    <ul class="bannerul">
+      <li>
+        <dl>
+          <dt><i class="iconfont icon-fangdajing"></i></dt>
+          <dd>附近</dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt><i class="iconfont icon-fangdajing"></i></dt>
+          <dd>当地菜</dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt><i class="iconfont icon-fangdajing"></i></dt>
+          <dd>咖啡馆</dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt><i class="iconfont icon-fangdajing"></i></dt>
+          <dd>一人美食</dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt><i class="iconfont icon-fangdajing"></i></dt>
+          <dd>家庭</dd>
+        </dl>
+      </li>
+     
+    </ul>
+  </div>
+  <div id="map">
+    <img src="../../assets/images/map.png">
+  </div>
+
+  <div class="infobox">
+      <ul>
+        <li class="store" *ngFor="let item of date;index as i">
+           <div class="storbox">
+             <img src={{item.cover}} class="storeimg">
+             <div>
+                <span class="storeleft">
+                 <p>{{item.name}}</p> 
+                 <p><span>{{item.cost}}</span> <span>{{item.type}}</span></p>
+                </span>
+                <span  class="storeright">{{item.km}}</span>
+               
+             </div>
+           </div>
+        </li>
+      </ul>
+      <p> 必吃美食</p>
+      <ul class="distul">
+          <li *ngFor="let item of date2; index as i" class="distlis"> 
+              <img src={{item.cover}}/>
+              <p>{{item.name}}</p>
+              <p>{{item.sum}}</p>
+          </li>
+      </ul>
+  </div>
+
+
+</div>

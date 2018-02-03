@@ -9,7 +9,9 @@ export class RecommendComponent implements OnInit {
 
   constructor() { }
 
+  
   ngOnInit() {
+
   }
 
 }

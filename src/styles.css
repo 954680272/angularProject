@@ -1,17 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 
 @charset "UTF-8";
-*{
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    -webkit-text-size-adjust: none;
-	-webkit-box-sizing:border-box;
-	box-sizing:border-box;
+blockquote, body, button, dd,p, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
 }
-body,html,div,h1,h2,h3,h4,h5,h6,ul,ol,dl,dt,dd,li,p{
-	margin:0;
-	padding:0;
-    -webkit-appearance: none;
-}
+
 a{
 	text-decoration: none;
 	color: #666;
@@ -31,25 +25,19 @@ input,select,textarea{
     font-size: inherit;
 }
 html{
-	font-size: -webkit-calc(100vw/6.4);background-color: #fff;
+    width: 100%;
+    height: 100%;
+    font-size: -webkit-calc(100vw/6.4);
+    font-size: -moz-calc(100vw/6.4);
+    font-size:calc(100vw/6.4) !important; 
+    background-color: #fff;
 }
 body{
+    width: 100%;
+    height: 100%;
 	font-size: 0.24rem;
 }
-.border-bottom{
-    position: relative;
-    border-top: none !important;
-}
-.border-bottom::after {
-    content: " ";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #e4e4e4;
-    -webkit-transform-origin: left bottom;
-    transform-origin: left bottom;
-}
+
+
 
 
