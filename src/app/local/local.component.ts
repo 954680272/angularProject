@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 // import {mapsrc} from "../../assets/"
 import axios from "axios"
+import {  Router } from '@angular/router';
 @Component({
   selector: 'app-local',
   templateUrl: './local.component.html',
@@ -52,7 +53,19 @@ public plus:any
 private date:any;
 private date2:any;
 
-  constructor() { }
+  constructor(private router:Router) { }
+
+
+
+
+  gotostore(item){
+    
+    item=JSON.stringify(item)
+    localStorage.store=item;
+    this.router.navigate(['/local/dtoredetail'])
+    // console.log(item)
+  }
+
 
   ngOnInit() {
     var em=null,map=null;
@@ -60,6 +73,8 @@ private date2:any;
       this.mapInit();
 
     });
+
+
 
     axios.get("http://47.94.227.171:4000/lcoal/getmapinfo")
     .then(res=>res.data)
@@ -76,7 +91,7 @@ private date2:any;
     .then(json=>{
       
       this.date2=json[0].content
-      console.log(this.date2)
+      // console.log(this.date2)
     })
 
   }

@@ -19,31 +19,31 @@
     <ul class="bannerul">
       <li>
         <dl>
-          <dt><i class="iconfont icon-fangdajing"></i></dt>
+          <dt [style.backgroundColor]="'#c490bf'"><i class="iconfont icon-dizhi" [style.fontSize]="'.3rem'"></i></dt>
           <dd>附近</dd>
         </dl>
       </li>
       <li>
         <dl>
-          <dt><i class="iconfont icon-fangdajing"></i></dt>
+          <dt [style.backgroundColor]="'#89c997'"><i class="iconfont icon-wan" [style.fontSize]="'.3rem'"></i></dt>
           <dd>当地菜</dd>
         </dl>
       </li>
       <li>
         <dl>
-          <dt><i class="iconfont icon-fangdajing"></i></dt>
+          <dt [style.backgroundColor]="'#8fc31f'"><i class="iconfont icon-chabei" [style.fontSize]="'.3rem'"></i></dt>
           <dd>咖啡馆</dd>
         </dl>
       </li>
       <li>
         <dl>
-          <dt><i class="iconfont icon-fangdajing"></i></dt>
+          <dt  [style.backgroundColor]="'#acd598'"><i class="iconfont icon-kuaizi" [style.fontSize]="'.3rem'"></i></dt>
           <dd>一人美食</dd>
         </dl>
       </li>
       <li>
         <dl>
-          <dt><i class="iconfont icon-fangdajing"></i></dt>
+          <dt [style.backgroundColor]="'#ff9758'"><i class="iconfont icon-home" [style.fontSize]="'.3rem'"></i></dt>
           <dd>家庭</dd>
         </dl>
       </li>
@@ -56,7 +56,7 @@
 
   <div class="infobox">
       <ul>
-        <li class="store" *ngFor="let item of date;index as i">
+        <li class="store" *ngFor="let item of date;index as i" (click)="gotostore(item)">
            <div class="storbox">
              <img src={{item.cover}} class="storeimg">
              <div>

@@ -1,24 +1,24 @@
 <div class="foot navbar navbar-default navbar-fixed-bottom">
-  <div class="foot_list active" (click)="changeacIndex($event)">
-    <a [routerLink]="['/layout/recommend']">
+  <div class="foot_list active" >
+    <a [routerLink]="['/layout/recommend']"  routerLinkActive="active"> 
       <i class="iconfont icon-fangdajing3"></i>
       <p>推荐</p>
     </a>
   </div>
-  <div class="foot_list" (click)="changeacIndex($event)">
-      <a [routerLink]="['/layout/local']" >
+  <div class="foot_list" >
+      <a [routerLink]="['/layout/local']"  routerLinkActive="active">
     <i class="iconfont icon-dangao"></i>
     <p>当地</p>
       </a>
   </div>
-  <div class="foot_list" (click)="changeacIndex($event)">
-      <a [routerLink]="['/layout/gourmet']" >
+  <div class="foot_list" >
+      <a [routerLink]="['/layout/gourmet']"  routerLinkActive="active">
     <i class="iconfont icon-leimucumeishi"></i>
     <p>美食家</p>
       </a>
   </div>
-  <div class="foot_list" (click)="changeacIndex($event)">
-      <a [routerLink]="['/layout/my']">
+  <div class="foot_list">
+      <a [routerLink]="['/layout/my']"  routerLinkActive="active">
     <i class="iconfont icon-guanyuwomen"></i>
     <p>我的</p>
       </a>

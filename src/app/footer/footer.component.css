@@ -26,7 +26,7 @@
 .foot_list a{
     color: #666;
 }
-.active>a{
+.foot_list .active{
     color: #ffa10d;
 }
 a{

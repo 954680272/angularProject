@@ -1,0 +1,82 @@
+.localhead{
+    height: .8rem;
+    color: aliceblue;
+    background: #1d1d1d;
+}
+.localtitle{
+    float: left;
+    margin-left: 1.88rem;
+    margin-top: .24rem;
+}
+#left {
+    color: aliceblue;
+}
+.local-detail-content{
+    margin-top: .8rem;
+    width: 100%;
+}
+
+.local-head>img{
+    width: 100%;
+    height: 2.63rem;
+}
+.local-detail-address{
+    height: 1.07rem;
+    width: 100%;
+    padding-left: .3rem;
+    font-size: .22rem;
+    padding-top: .3rem;
+    
+
+}
+.local-detail-address>p{
+    width: 4.83rem;
+    display: inline-block;
+    line-height: .4rem;
+}
+#addressicon{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: .48rem;
+    margin-top: .15rem;
+}
+.local-detail-line{
+    background: #eeeeee;
+    height: .13rem;
+}
+.local-detali-about{
+    padding-left: .29rem;
+    padding-top: .21rem;
+}
+.local-detali-about>P>span:first-child{
+    margin-right: .22rem;
+}
+.local-icon{
+    color: #ffa10d;
+}
+.local-detail-reRes{
+    padding-left: .3rem;
+    padding-right: .3rem;
+}
+.local-detail-reRes>p{
+    margin-top: .2rem;
+}
+.local-detail-reRes .lcoal-desc-line{
+    display: inline-block;
+    height: .25rem;
+    width: .07rem;
+    background: #ffa10d;
+    margin-top: .12rem
+}
+.lcoal-end{
+    padding: .15rem;
+}
+.lcoal-end>img{
+  width: 100%;
+  height: 3rem;
+}
+.local-desc-title{
+    text-indent: .2rem;
+    margin-top: .2rem;
+    margin: 0;
+}

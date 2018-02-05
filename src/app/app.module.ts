@@ -14,6 +14,7 @@ import { UserComponent } from './user/user.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { LocalstoredetailComponent } from './localstoredetail/localstoredetail.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     UserComponent,
     LoginComponent,
     RegisterComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    LocalstoredetailComponent
   ],
   imports: [
     BrowserModule,

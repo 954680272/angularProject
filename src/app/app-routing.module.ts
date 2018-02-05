@@ -9,6 +9,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { UserComponent } from './user/user.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { LocalstoredetailComponent } from './localstoredetail/localstoredetail.component';
 
 const routes: Routes = [
   {path:"",redirectTo:"/layout/recommend",pathMatch:'full'},
@@ -26,6 +27,7 @@ const routes: Routes = [
       {path:"register",component:RegisterComponent}
     ]
   },
+  {path:"local/dtoredetail",component:LocalstoredetailComponent},
   {path:"**",component:NotFoundComponent}
 ];
 

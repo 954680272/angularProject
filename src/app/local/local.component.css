@@ -95,12 +95,20 @@ input::-webkit-input-placeholder { /* WebKit browsers */
   }
   .bannerul>li{
       float: left;
-      margin-top: 2.8rem;
+      margin-top: 2.7rem;
       margin-left: .5rem;
       color: #ffffff;
       font-size: .23rem;
   }
   .bannerul>li>dl>dt{
+      text-align: center;
+      border-radius: 50%;
+      width: .65rem;
+      height: .65rem;
+      padding-top: .12rem;
+     
+  }
+  .bannerul>li>dl>dd{
       text-align: center;
   }
 ul,  dl {
