@@ -1,0 +1,61 @@
+.my{
+    background-color: #555;
+    margin-bottom: .72rem;}
+
+.my-top{
+        width: 100%;
+        overflow: hidden;
+    }
+    .top-box{
+            height: 4.50rem;
+            border-bottom: 1px solid #24a500;
+            background: url("../../assets/images/notev-bg.jpg") center center no-repeat;
+            background-size: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 .20rem;
+            color: #fff;
+            overflow: hidden;
+            
+        }
+        p,i{
+            font-size: .33rem;            
+        }
+        p{
+            padding-left: 1.70rem;
+        }
+
+    .my-box{
+        width: 100%;
+        padding: 0 .20rem;
+        background-color: #fff;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: .05rem;
+        overflow: hidden;
+        height: 1rem;
+        
+    }
+
+    .main{
+        border-bottom: .01rem solid #eee;
+        
+    }
+    span{
+        width: 100%;
+        text-align: right;
+        display: block;
+        font-size: .50rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+

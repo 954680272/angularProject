@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 // import {mapsrc} from "../../assets/"
 import axios from "axios"
 import {  Router } from '@angular/router';
@@ -7,10 +8,12 @@ import {  Router } from '@angular/router';
   templateUrl: './local.component.html',
   styleUrls: ['./local.component.css']
 })
+
 export class LocalComponent implements OnInit {
 
   // public mapInit:any;
 public plus:any
+
   mapInit(){
 
     this.plus.geolocation.getCurrentPosition(function(p){
@@ -81,7 +84,7 @@ private date2:any;
     .then(json=>{
       
       this.date=json[0].content
-      console.log(this.date)
+      // console.log(this.date)
     })
 
 
